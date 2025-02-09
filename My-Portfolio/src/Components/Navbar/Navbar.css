@@ -1,0 +1,9 @@
+/* Tailwind requires class names to be static and known at build time to generate the appropriate CSS. Since ${props.navTheme} is dynamic, Tailwind won't generate the class for hover:text-${props.Rotatortheme} or any other value you pass dynamically. */
+
+:root {
+    --nav-hover-color: #ffa500;
+}
+  
+.nav-item:hover {
+    color: var(--nav-hover-color);
+  }

@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes custom-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes custom-spin-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+:root {
+    --primary-color: #ffa500; /* Default orange */
+  }
+.rotating-border {
+  position: relative;
+  display: inline-block;
+  width: 300px; /* Image width */
+  height: 300px; /* Image height */
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Default theme for rotating border */
+.rotating-border::before,
+.rotating-border::after {
+  content: '';
+  position: absolute;
+  top: -5px; /* Slightly larger than the image */
+  left: -5px;
+  width: 310px; /* Larger than the image */
+  height: 310px; /* Larger than the image */
+  border: 5px solid transparent;
+  border-top: 5px solid var(--primary-color); /* Default to orange */
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 0 15px var(--primary-color), 0 0 30px var(--primary-color); /* Glowing effect */
+}
+
+.rotating-border::before {
+  animation: custom-spin 6s linear infinite; /* Rotates clockwise */
+}
+
+.rotating-border::after {
+  animation: custom-spin-reverse 6s linear infinite; /* Rotates counterclockwise */
+  border-top-color: var(--primary-color); /* Default to orange */
+}
+
+/* Type Animation */
+.typedClass{
+  color:var(--primary-color)
+}
+
+.btnThemeChanges{
+  background-color: var(--primary-color);
+}
+
+
+/* rotating square direction border  */
+.box{
+  position: relative;
+  width: 260px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.box::before{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 180%;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color);
+  animation: animate 4s linear infinite;
+  
+  
+}
+.box::after{
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background-color:  #334155;
+  border-radius: 20px;
+  
+}
+
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+    
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}

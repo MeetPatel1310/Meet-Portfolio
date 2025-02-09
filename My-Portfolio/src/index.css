@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+    --about-color: #ffa500;
+}
+
+.themeTextColor{
+    color: var(--about-color)
+}
+/* About small double undeline code  */
+.custom-double-underline {
+    position: relative;
+    display: inline-block;
+    color: inherit; /* Keeps the text color as it is */
+  }
+  
+  .custom-double-underline::before,
+  .custom-double-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background-color: var(--about-color) /* Set the underline color to red */
+  }
+  
+  .custom-double-underline::before {
+    bottom: -3px;
+    width: 50%;
+  }
+  
+  .custom-double-underline::after {
+    bottom: -10px;
+    width: 25%;
+    left: 25%;
+  }

@@ -1,0 +1,9 @@
+:root {
+    --Experiance-primary-color: ; /* Default orange */
+}
+.Tech-shadow{
+    /* box-shadow: 3px 5px 6px 0 var(--primary-color); */
+    /* background: radial-gradient(circle, var(--primary-color) 30%, var(--primary-color) 80%); */
+    box-shadow: 0 4px 6px var(--Experiance-primary-color) ,  /* Outer glow effect */
+    0 0 15px var(--Experiance-primary-color)  /* Stronger glow effect */
+}
