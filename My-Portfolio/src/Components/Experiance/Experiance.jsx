@@ -107,17 +107,19 @@ const Experiance = (props) => {
             initial={{ opacity: 1, y: 100 }} // Initially off-screen and invisible
             whileInView={{ opacity: 1, y: 0 }} // Animate to visible and in position when in view
             viewport={{ once: false, amount: 0.3 }} // Triggers the animation once 30% of the element is in view
-            transition={{
-              duration: 1,
-              delay: index * 0.2, // Staggered animation based on index
-            }}
+            // transition={{
+            //    // Staggered animation based on index
+            // }}
             animate={{
               y: [0, -20, 0], // Keyframes for up-down movement
             }}
             transition={{
+              
+              delay: index * 0.2,
               repeat: Infinity, // Infinite loop
+             
               repeatType: "loop",
-              duration: 4 + index * 0.3 // Duration for one complete cycle
+              duration: 3 , // Duration for one complete cycle
             }}
           >
             <img className="w-full h-full" src={img} alt="" />
