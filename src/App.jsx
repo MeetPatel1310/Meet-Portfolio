@@ -13,23 +13,16 @@ import Contact from "./Components/Contact/Contact.jsx";
 
 function App() {
   return (
-    <div>
-      
-      
-
-      
     <Router basename="/Meet-Portfolio">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/experiance" element={<Experiance />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-
-      
-    </div>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/experiance" element={<Experiance />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  </Router>
   );
 }
 
