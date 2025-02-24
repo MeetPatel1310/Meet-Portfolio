@@ -205,7 +205,7 @@ const Portfolio = (props) => {
               type: "spring", // Spring animation for bounce
               stiffness: 200, // Bounce intensity
               damping: 10, // Smoothness of the bounce
-              duration: 1, // Duration of the animation
+              duration: 2, // Duration of the animation
               delay: id * 0.05, // Staggered delay for each card
             }}
           >

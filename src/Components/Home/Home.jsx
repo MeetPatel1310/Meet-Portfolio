@@ -184,16 +184,22 @@ const Home = () => {
         
       </div>
 
-      <motion.div
-        ref={ref}
+      <div
+        // ref={ref}
         className="p-5 rounded-lg mb-10 overflow-hidden"
-        initial={{ opacity: 0, y: -100 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
-        transition={{ duration: 1 }}
+        // initial={{ opacity: 0, y: -100 }}
+        // animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
+        // transition={{ duration: 1 }}
       >
         <div className="text-white w-full  md:flex md:flex-row justify-evenly items-center p-8 md:p-10 md:mt-10 gap-15 flex flex-col">
-          <div className="content flex flex-col w-full md:w-1/2 gap-5 pt-5 order-2 md:order-1  ">
+          <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: -100 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
+          transition={{ duration: 2 }}
+           className="content flex flex-col w-full md:w-1/2 gap-5 pt-5 order-2 md:order-1  ">
             <TypeAnimation
+            
               sequence={[
                 "Welcome Here!",
                 1000,
@@ -204,7 +210,7 @@ const Home = () => {
               ]}
               wrapper="span"
               speed={20}
-              className={`typedClass text-[2em] inline-block `}
+              className={`typedClass text-[2em] inline-block mt-8 sm:mt-0 `}
               // style={{
               //   fontSize: "2em",
               //   display: "inline-block",
@@ -231,16 +237,21 @@ const Home = () => {
             >
               Contact me
             </button>
-          </div>
+          </motion.div>
 
           {/* Rotating border */}
-          <div className="rotating-border order-1">
+          <motion.div 
+          ref={ref}
+          initial={{ opacity: 0, y: -100 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
+          transition={{ duration: 4 }}
+          className="rotating-border order-1">
             <img
               src={img1}
               alt="Profile"
               className="rounded-full w-full h-full bg-none object-cover"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* <div className="container">
@@ -256,10 +267,15 @@ const Home = () => {
             </div>
             
           </div> */}
-          <div className="myDetail flex flex-wrap gap-10 justify-evenly mt-[5%] ">
+          <div 
+          
+          className="myDetail flex flex-wrap gap-10 justify-evenly mt-[5%] ">
 
             {myDetails.map(({id, icon, h2field, h3field})=>(
-                <div key={id} className="box hover:scale-105 duration-150 cursor-pointer" onClick={()=>handleBox(id)}>
+                <div 
+                
+                key={id} 
+                className="box hover:scale-105 duration-150 cursor-pointer" onClick={()=>handleBox(id)}>
                 <div
                   id="Mycontact"
                   style={{color:`${rotatorTheme}`}}
@@ -279,7 +295,7 @@ const Home = () => {
           </div>
           
         
-      </motion.div>
+      </div>
 
       <div id="about">
         {/* Scroll Animation  */}
@@ -292,15 +308,16 @@ const Home = () => {
         >
           <About />
         </motion.div> */}
-        <motion.div
+        <div
           id="about-section" // The element to observe for scroll visibility
-          initial={{ scale: 1 }} // Start with scale 1
-          animate={{ scale }} // Animate scale based on visibility
-          transition={{ duration: 0.5 }} // Duration of the scaling effect
+
+          // initial={{ scale: 1 }} // Start with scale 1
+          // animate={{ scale }} // Animate scale based on visibility
+          // transition={{ duration: 1 }} // Duration of the scaling effect
           className="text-[40px] "
         >
           <About colorTheme={rotatorTheme} />
-        </motion.div>
+        </div>
       </div>
 
       <div id="projects">
