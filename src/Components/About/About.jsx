@@ -120,8 +120,8 @@ const About = (props) => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className=" md:gap-3 lg:w-[45%] flex flex-col gap-3 lg:items-center">
-              <div className="md:flex md:flex-row flex-col sm:gap-0  w-[90%] md:justify-between">
+            className=" md:gap-3 lg:w-[50%] flex flex-col gap-3 lg:items-center">
+              <div className="md:flex md:flex-row md:justify-between flex-col w-full   ">
                 <div className="left flex flex-col md:gap-1 gap-2 ">
                   <div className="birth flex gap-2 ">
                     <h2 className="text-lg">Birth: </h2>
@@ -134,7 +134,7 @@ const About = (props) => {
 
                   <div className="Phone flex text-lg gap-2">
                     <h2>Phone:</h2>
-                    <p> 76218-20722</p>
+                    <p >76218-20722</p>
                   </div>
                 </div>
                 <div className="right flex flex-col md:gap-1 gap-2 ">
@@ -144,7 +144,7 @@ const About = (props) => {
                   </div>
                   <div className="GitHub flex text-lg gap-2">
                     <h2>Github:</h2>
-                    <p onClick={handleGithubLink} style={{color:"#1E90FF"}} className="cursor-pointer">https://github.com/MeetPatel1310</p>
+                    <p onClick={handleGithubLink} style={{color:"#1E90FF", wordBreak: 'break-word',whiteSpace: 'normal',}} className="cursor-pointer">https://github.com/MeetPatel1310</p>
                   </div>
 
                   <div className="City flex text-lg gap-2">
@@ -155,9 +155,13 @@ const About = (props) => {
                 </div>
               </div>
               <hr className="lg:w-[90%] md:w-[0%] w-[100%] mx-auto" style={{ borderColor: props.colorTheme }} />
-              <div className=" Skill w-[90%] ">
-                <h2 className="text-lg ">
-                  <span className="text-xl font-medium" style={{ color: props.colorTheme }}>Skills :</span> HTML &
+              <div className=" Skill "
+              style={{
+                wordBreak: 'break-word',
+                whiteSpace: 'normal',
+              }}>
+                <h2 className="text-lg text-justify ">
+                  <span className="text-xl font-medium " style={{ color: props.colorTheme }}>Skills :</span> HTML &
                   CSS, Javascript, ReactJS, NodeJS, ExpressJS, Redux,
                   React-Native, MySQL, MongoDB, TailwindCSS, Bootstrap, Java,
                   Python, Git & Github
@@ -169,7 +173,7 @@ const About = (props) => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="lg:w-[55%] w-[95%]  lg:py-0 lg:flex lg:flex-col lg:items-center  lg:justify-center">
+            className="lg:w-[50%] w-[95%]  lg:py-0 lg:flex lg:flex-col lg:items-center  lg:justify-center">
               
               {Skill.map(({ id, name, PR }) => {
                 return(

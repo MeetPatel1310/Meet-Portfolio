@@ -31,7 +31,7 @@ const Navbar = (props) => {
 
   return (
     <div>
-      <nav className="flex justify-between items-center h-12 bg-slate-900 text-white px-10 fixed top-0 left-0 right-0  z-10" style={{ boxShadow: `0 0.5px 20px 0 ${props.navTheme}` }}>
+      <nav className="flex justify-between items-center h-12 bg-slate-900 text-white px-10 fixed top-0 left-0 right-0  z-50" style={{ boxShadow: `0 0.5px 20px 0 ${props.navTheme}` }}>
         <div className="font-bold text-xl" style={{color:`${props.navTheme}`}}>Portfolio</div>
         <ul className="hidden md:flex justify-between items-center md:gap-12 pr-8 h-full ">
           <Link to="#" onClick={() => handleScroll("about")}>
