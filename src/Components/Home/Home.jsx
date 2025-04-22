@@ -148,10 +148,10 @@ const Home = () => {
 
       <div className="flex flex-col gap-2 items-center  absolute left-0 lg:pl-11 md:pl-4 sm:pl-[40px] pl-1 md:top-10 top-8">
         
-        <div className="w-11 h-[2.25rem] flex items-center ">
+        <div className="w-11 h-[2.25rem] flex items-center  ">
           <img
             onClick={handleColorTheme}
-            className="w-10 h-[2.25rem]"
+            className="w-10 h-[2.25rem] "
             src={colorWheel}
             alt="color-plate"
           />
@@ -159,7 +159,7 @@ const Home = () => {
         <div
           className={`${
             isOpenColorPlate ? "block" : "hidden"
-          } selectTheamMenu w-[2.25rem] h-[10.75rem] p-2 border border-white-600 rounded-lg flex flex-col justify-between items-center shadow-[0_4px_6px_0] transition-transform duration-1500 ease-in-out transform  ${
+          } selectTheamMenu w-[2.25rem] h-[10.75rem] p-2 border border-white-600 rounded-lg flex flex-col justify-between items-center shadow-[0_4px_6px_0] transition-transform duration-1500 ease-in-out transform z-50 ${
             isOpenColorPlate ? "translate-y-0" : "-translate-y-full"
           }`}
         >
@@ -186,12 +186,12 @@ const Home = () => {
 
       <div
         // ref={ref}
-        className="p-5 rounded-lg mb-10 overflow-hidden"
+        className=" rounded-lg mb-10 overflow-hidden"
         // initial={{ opacity: 0, y: -100 }}
         // animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
         // transition={{ duration: 1 }}
       >
-        <div className="text-white w-full  md:flex md:flex-row justify-evenly items-center p-8 md:p-10 md:mt-10 gap-15 flex flex-col">
+        <div className="text-white w-full  md:flex md:flex-row justify-evenly items-center p-5 md:p-10 md:mt-10 gap-15 flex flex-col">
           <motion.div
           ref={ref}
           initial={{ opacity: 0, y: -100 }}
@@ -245,7 +245,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -100 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
           transition={{ duration: 4 }}
-          className="rotating-border order-1 ml-8">
+          className="rotating-border order-1 mt-8">
             <img
               src={img1}
               alt="Profile"

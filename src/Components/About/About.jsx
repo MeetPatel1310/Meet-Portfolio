@@ -164,7 +164,7 @@ const About = (props) => {
                   <span className="text-xl font-medium " style={{ color: props.colorTheme }}>Skills :</span> HTML &
                   CSS, Javascript, ReactJS, NodeJS, ExpressJS, Redux,
                   React-Native, MySQL, MongoDB, TailwindCSS, Bootstrap, Java,
-                  Python, Git & Github
+                  Python, Git & Github.
                 </h2>
               </div>
             </motion.div>
