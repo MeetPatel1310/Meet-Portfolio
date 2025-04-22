@@ -201,7 +201,7 @@ const About = (props) => {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 1, delay: 0.8 }}
           className="text-justify text-lg">
-           Working at TechAmdavad as a Web Developer for the past six months, building responsive and modern web applications.
+           Working at TechAmdavad as a Full-Stack Developer, I design and develop scalable, responsive applications using React.js, Node.js, MongoDB, and Express.js.
           </motion.p>
 
           

@@ -197,7 +197,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -100 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
           transition={{ duration: 2 }}
-           className="content flex flex-col w-full md:w-1/2 gap-5 pt-5 order-2 md:order-1  ">
+           className="content flex flex-col w-full md:w-1/2 gap-5 pt-5  order-2 md:order-1  ">
             <TypeAnimation
             
               sequence={[
@@ -245,7 +245,7 @@ const Home = () => {
           initial={{ opacity: 0, y: -100 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
           transition={{ duration: 4 }}
-          className="rotating-border order-1">
+          className="rotating-border order-1 ml-8">
             <img
               src={img1}
               alt="Profile"
