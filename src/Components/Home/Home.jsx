@@ -205,7 +205,7 @@ const Home = () => {
                 1000,
                 "I'm Meet Patel",
                 1000,
-                "A Web Developer & Programmer.",
+                "A Full-Stack Developer & Programmer.",
                 1000,
               ]}
               wrapper="span"
@@ -219,16 +219,22 @@ const Home = () => {
               repeat={Infinity}
             />
             <p className={`text-xl md:2xl text-justify `}>
-              I am a skilled and passionate web designer with experience in
+              I am a skilled and passionate software developer with experience in
               creating visually appealing and user-friendly websites.
             </p>
             <div className="availableOn flex flex-col">
               <p className="text-lg">Available on </p>
               <div className="icons flex pt-2 gap-2">
-                <AiOutlineInstagram className="text-2xl hover:scale-110" />
-                <IoLogoFacebook className="text-2xl hover:scale-110" />
-                <IoLogoGithub className="text-2xl hover:scale-110" />
-                <IoLogoLinkedin className="text-2xl hover:scale-110" />
+
+                <a href="https://github.com/MeetPatel1310" target="_blank"> <IoLogoGithub className="text-2xl hover:scale-110" /></a>
+
+                <a href="https://www.linkedin.com/in/meet-patel-19abb4352/" target="_blank"><IoLogoLinkedin className="text-2xl hover:scale-110" /></a>
+                
+                <a href="https://www.instagram.com/meetpatel5025/?hl=en" target="_blank"><AiOutlineInstagram className="text-2xl hover:scale-110" /></a>
+                
+                <a href="https://www.linkedin.com/in/meet-patel-19abb4352/" target="_blank"><IoLogoFacebook className="text-2xl hover:scale-110" /></a>
+                
+                
               </div>
             </div>
             <button

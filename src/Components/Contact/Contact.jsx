@@ -71,15 +71,28 @@ const Contact = (props) => {
       <hr class="border-t-2 border-gray-500 mb-9" />
       <div className=" w-full icons flex flex-col items-center justify-center pt-2">
         <div className="flex justify-cente gap-2">
-          <div className="text-2xl hover:scale-110">
-            <AiOutlineInstagram />
-          </div>
-          <div className="text-2xl hover:scale-110">
+          <a href="https://github.com/MeetPatel1310" target="_blank">
+           <div className="text-2xl hover:scale-110"><IoLogoGithub />
+           </div>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/meet-patel-19abb4352/" target="_blank">
+            <div className="text-2xl hover:scale-110"><IoLogoLinkedin />
+            </div>
+          </a>
+                          
+          <a href="https://www.instagram.com/meetpatel5025/?hl=en" target="_blank">
+            <div className="text-2xl hover:scale-110"><AiOutlineInstagram />
+            </div>
+          </a>
+                          
+          <a href="https://www.linkedin.com/in/meet-patel-19abb4352/" target="_blank">  <div className="text-2xl hover:scale-110">
             <IoLogoFacebook />
           </div>
-          <div className="text-2xl hover:scale-110">
-            <IoLogoGithub />
-          </div>
+          </a>
+          
+          
+          
           <div className="text-2xl hover:scale-110">
             <IoLogoLinkedin />
           </div>
