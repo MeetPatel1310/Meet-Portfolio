@@ -238,10 +238,10 @@ const Home = () => {
               </div>
             </div>
             <button
-              className={`btnThemeChanges w-auto self-start rounded-2xl  px-8 py-3 mt-2 hover:opacity-75 duration-300 hover:scale-105 font-semibold`}
+              className={` fancy-button w-fit`}
               onClick={() => handleContact("contact")}
             >
-              Contact me
+              <span>Contact me</span>
             </button>
           </motion.div>
 

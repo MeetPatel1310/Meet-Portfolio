@@ -61,10 +61,10 @@ const Contact = (props) => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="mt-4 p-2   text-white font-bold rounded transition duration-300 hover:scale-95"
-            style={{backgroundColor:`${props.colorTheme}`}}
+            className={` fancy-button my-4 `}
+            // style={{backgroundColor:`${props.colorTheme}`}}
           >
-            Submit
+            <span>Submit</span>
           </button>
         </form>
       </div>
